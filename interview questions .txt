@@ -1,0 +1,72 @@
+difference between div and span
+  span is in-line, generally one liners
+  div is a larger section, large box
+
+what is the dom?
+  Document Object Model
+  it represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects. That way, programming languages can connect to the page.
+
+what are data attributes?
+  custom attributes to store data. (id, class, etc.) you can access it in the dom
+
+what is JSON?
+  Javascript Object Notation;
+  Universal language
+
+=, ==, === meaning?
+  = - assignment operator
+  == - not strict on types. 1 can equal '1'
+  === - no type conversion. must be same across the board
+
+const x = num || 0, why is it useful?
+  || assigns 0 if num is undefined.
+
+const x = num && 7
+  conditional rendering. If num is truthy then x == 7
+
+what is function scope?
+  it's what a function has access to. It can go up, but can't go down.
+
+Best techniques for Front-End Optimization?
+  Speed - Caching, CDN's, lazy loading (only load what you need, when you need it), Gzip(compress your payload)
+  Memory - DRY, closures (tell trash collector to not delete pointers), streaming (buffers and streams)
+  CPU Usage - Big 0 Notation (how optimized a function is)
+                  linear - same time to execute.
+                  expediential
+  UX - scripts go on bottom of HTML, Non-Blocked HTML
+
+How do you stay up to date with what's up to date with Javascript?
+  articles (medium)
+  slack (utahJS, DevMountain)
+  meet-ups (Silicon Slopes, React)
+  YouTube (fun fun functions)
+
+How do you assure you practice code quality?
+  testing
+  refactor (clean it up)
+  PeerReview
+  Pair Programming
+  Linting (running a program that analyse code for potential errors)
+
+functional vs object oriented programming?
+  functional - all functions should be pure, never mutate data (used in React)
+  OOP - everything is an object with properties and has functionality
+
+Terms:
+  -Resources: things that cost money
+    DEVS: builders of code
+    QA: Unit testing, end-to-end testing
+    DEV OPs: Production uptime, manage server, make sure everything is optimized. Always make sure the product is online. they host it
+    PM: Make sure QA, DEVS, and OPS are at full capacity, make sure everyone is on the same page. Manage the road map, make sure there're no road blocks.
+    UI/UX: Designers of product, work close with PM's.
+
+  -Micro Services: stand alone products that communicate with each other via internet, can be multiple languages.
+  -Pipeline: Process for deploying code into production. write -> Git -> Test -> merged -> stag -> production
+  -Continuous Delivery: multiple product updates throughout the day.
+
+  Be Honest in the interviews
+
+  Tell me about your STACK?
+
+  What types of things could you have me working on?
+
