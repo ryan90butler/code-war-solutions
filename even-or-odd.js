@@ -8,3 +8,9 @@ function even_or_odd(number) {
 }
 
 console.log(even_or_odd(-654))
+
+function even_or (n){
+  return n % 2 ===0 ? 'Even': 'Odd'
+}
+
+console.log(even_or(-654))
