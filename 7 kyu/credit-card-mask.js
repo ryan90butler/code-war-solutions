@@ -9,4 +9,4 @@ function maskify(cc) {
     return first.substr(4) + lastFour
   }
 }
-console.log(maskify('13325'))
+console.log(maskify('1e3325'))
