@@ -4,4 +4,4 @@ function stringClean(s){
  return s.replace(/[0-9]/g,'')
 }
 
-console.log(stringClean('tHi1s loo0ks gre8at!!'))
+console.log(stringClean('tHi1s loo0ks gre8at!'))
