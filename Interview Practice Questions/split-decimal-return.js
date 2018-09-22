@@ -1,5 +1,3 @@
-//You get an array of numbers, return the sum of all of the positives ones.
-
 function greaterPart(test){
   const newStr = String(test)
   const newNum = newStr.split('.')
@@ -15,5 +13,3 @@ if(num[1]>num[0]){
   return test
 }
 }
-
-console.log(greaterPart(133.3))

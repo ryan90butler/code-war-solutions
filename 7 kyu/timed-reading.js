@@ -29,3 +29,4 @@ function timedReading(maxLength, text) {
     }
   } return count;
 }
+
