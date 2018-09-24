@@ -2,17 +2,13 @@
 
 function greaterPart(test){
   const newStr = String(test)
-  const newNum = newStr.split('.')
-  const num = newNum.map(function (x) {
-    return Number(x);
-    });
-  if(num[0]>num[1]){
-    return num[0]
-  }
-  if(num[1]>num[0]){
-    return num[1]
-  }else{
-    return test
-  }
+  return parseInt(newStr.split('.').sort((a,b)=>b-a)[0],10)
 }
-console.log(greaterPart(43.79))
+console.log(greaterPart(100.211))
+
+
+function addArr(arr){
+  return arr.reduce((a,b)=>a+b,0)
+}
+
+console.log(addArr([9,4]))
