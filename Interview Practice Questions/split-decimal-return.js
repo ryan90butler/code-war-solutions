@@ -18,3 +18,9 @@ function greaterPart(test){
 }
 
 console.log(greaterPart(32.109))
+
+function addArr(arr){
+  return arr.reduce((a,b)=>a+b,0)
+}
+
+console.log(addArr([92,42]))
