@@ -4,16 +4,23 @@
 
 // What is the final state of bulb No. 64? And how many of the light bulbs are illuminated after the 100th person has passed through the room?
 
-function oneHundredBulbs(people){
-  const bulbs = [];
-  for(let i=1;i<100;i++){
-    if(people% [i] === people){
-      bulbs.push('on')
+function oneHundredBulbs(bulbNumber){
+    const bulbs = [];
+    for(k=1;k<=100;k++){
+      bulbs[k] = 0
     }
-    if(people % [i] !== 0)
-      bulbs.push('off')
+  for(let i=1;i<=100;i++){
+    for(let j=i;j<=100;j++){
+      if(j % i == 0){
+        if(bulbs[j] == 0){
+          bulbs[j] = 1
+        }else{
+          bulbs[j] = 0
+        }
+      }
+    }
   }
-  return bulbs
+  return bulbs[bulbNumber]
 }
 
-console.log(oneHundredBulbs(1))
+console.log(oneHundredBulbs(64))
