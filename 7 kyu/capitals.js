@@ -12,7 +12,6 @@ var capitals = function (word) {
 
 console.log(capitals('heLLo'))
 
-
 for(var i=0; i<inputString.length; i++){
     if(inputString[i].match(/[A-Z]/) != null){
         positions.push(i);
